@@ -13,5 +13,11 @@ describe Scrabble do
 
       expect(scrabble.score).to eq 0
     end
+
+    it "scores 1 if word is 'a'" do
+      scrabble = Scrabble.new('a')
+
+      expect(scrabble.score).to eq 1
+    end
   end
 end
