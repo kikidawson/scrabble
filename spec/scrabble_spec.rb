@@ -19,5 +19,11 @@ describe Scrabble do
 
       expect(scrabble.score).to eq 1
     end
+
+    it "scores 4 if word is 'f'" do
+      scrabble = Scrabble.new('f')
+
+      expect(scrabble.score).to eq 4
+    end
   end
 end
